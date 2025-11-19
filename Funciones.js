@@ -16,3 +16,7 @@ function sumar(a, b) {
 // Llamada a la función y almacenamiento del resultado en una variable
 let resultado = sumar(5, 3);
 console.log("Resultado de la suma:", resultado);
+
+// Podemos guardar el resultado de una operacion:
+let resultadoGuardado = sumar(1, 10)
+console.log("El resultado de resultadoGuardado es:" , resultadoGuardado)
