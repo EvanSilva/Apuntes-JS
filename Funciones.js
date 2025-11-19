@@ -20,3 +20,4 @@ console.log("Resultado de la suma:", resultado);
 // Podemos guardar el resultado de una operacion:
 let resultadoGuardado = sumar(1, 10)
 console.log("El resultado de resultadoGuardado es:" , resultadoGuardado)
+
