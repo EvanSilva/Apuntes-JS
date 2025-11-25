@@ -201,3 +201,63 @@ for (let elemento of array) {
     console.log("Elemento actual (for each clásico):", elemento);
 }   
 
+
+// Arrays: estructuras de datos que almacenan múltiples valores en una sola variable. Se definen con corchetes [] y los elementos se separan por comas.
+const frutas = ["manzana", "banana", "cereza"];
+console.log("Array de frutas:", frutas);
+console.log("Primera fruta:", frutas[0]); // Acceder al primer elemento del array
+console.log("Segunda fruta:", frutas[1]); // Acceder al segundo elemento del array
+console.log("Tercera fruta:", frutas[2]); // Acceder al tercer elemento del array
+console.log("Número de frutas:", frutas.length); // Obtener la longitud del array
+
+// Agregar un elemento al final del array
+frutas.push("naranja");
+console.log("Array de frutas después de push:", frutas);
+
+// Eliminar el último elemento del array
+frutas.pop();
+console.log("Array de frutas después de pop:", frutas); 
+
+// Eliminar el primer elemento del array
+frutas.shift();
+console.log("Array de frutas después de shift:", frutas);
+
+// Agregar un elemento al inicio del array
+frutas.unshift("fresa");
+console.log("Array de frutas después de unshift:", frutas);
+
+// Podemos usar slice para obtener una parte del array, sin modificar el array original. El numero que determina el primer indice es inclusivo, y el segundo indice es exclusivo. Y las posiciones las contamos desde 0.
+let citricos = frutas.slice(1, 3);
+
+console.log("Array de cítricos (slice):", citricos);
+console.log("Array de frutas original después de slice:", frutas);
+
+// Podemos usar splice para eliminar o reemplazar elementos en el array original. El primer número es el índice donde empezar, el segundo número es cuántos elementos eliminar, y los siguientes números son los elementos que se van a agregar en esa posición.
+
+frutas.splice(1, 1, "kiwi");
+console.log("Array de frutas después de splice:", frutas);
+
+// Podemos usar indexOf para encontrar la posición de un elemento en el array.
+let posicionCereza = frutas.indexOf("cereza");
+console.log("Posición de 'cereza' en el array de frutas:", posicionCereza);
+
+// Podemos usar join para unir los elementos del array en una cadena de texto.
+let frutasString = frutas.join(", ");
+console.log("Array de frutas como cadena de texto (join):", frutasString);
+
+// Si queremos que en nuestro array no se repitan elementos, podemos usar Set, que es una estructura de datos que almacena valores únicos.
+let numeros = [1, 2, 2, 3, 4, 4, 5];
+let numerosUnicos = [...new Set(numeros)];
+console.log("Números únicos usando Set:", numerosUnicos);
+
+// Podemos usar map para transformar los elementos de un array y crear uno nuevo. Map sirve para aplicar una función a cada elemento del array original y devolver un nuevo array con los resultados.
+let numerosMultiplicados = numeros.map(function(num) {
+    return num * 2;
+});
+console.log("Números multiplicados por 2 usando map:", numerosMultiplicados);
+
+// Podemos usar filter para filtrar los elementos de un array según una condición y crear uno nuevo. Filter sirve para crear un nuevo array con los elementos que cumplen una condición específica.
+let numerosPares = numeros.filter(function(num) {
+    return num % 2 === 0;
+});
+console.log("Números pares usando filter:", numerosPares);
