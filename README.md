@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Introducción
+## Introducción
 
 Este documento contiene una recopilación de apuntes, explicaciones y conceptos esenciales sobre **JavaScript**, orientados al aprendizaje dentro del módulo *Puesta en Producción Segura*.  
 Aunque JavaScript es conocido principalmente por su uso en la web, también tiene implicaciones importantes en seguridad, desarrollo backend, automatización y ejecución de scripts.
@@ -14,7 +14,7 @@ El objetivo de este README es servir como **base sólida** para entender JavaScr
 
 ---
 
-## 🚀 ¿Qué es JavaScript?
+## ¿Qué es JavaScript?
 
 **JavaScript (JS)** es un lenguaje de programación ligero, interpretado y orientado a objetos, ampliamente utilizado para dar interactividad a las páginas web.  
 Sin embargo, su ecosistema ha crecido hasta el punto de que hoy en día se usa también para:
@@ -39,3 +39,10 @@ Esto facilita la rapidez al desarrollar y depurar.
 
 ### 2. **Tipado débil**
 Las variables pueden cambiar de tipo en tiempo de ejecución.
+
+---
+
+## Extensiones usadas en VScode
+
+ - Bracket Pair Color DLW
+ - Code Runner
