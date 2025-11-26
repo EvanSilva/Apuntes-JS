@@ -55,6 +55,13 @@ function multiplicar (a, b){
 
 function dividir (a, b){
 
+    if (a === 0 || b === 0){
+
+        console.log("No se puede dividir por cero");
+        process.exit(1);
+
+    }
+
     let resultado = a / b;
     return resultado;
 }
