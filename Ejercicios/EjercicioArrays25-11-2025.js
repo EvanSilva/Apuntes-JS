@@ -17,3 +17,4 @@ console.log("\n" ,"-----", "Usando forEach method", "-----");
 
 console.log("Listado de personas usando forEach:");
 pps.forEach(persona => console.log(persona));
+

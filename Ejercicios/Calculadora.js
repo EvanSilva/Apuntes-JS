@@ -12,30 +12,37 @@ comprobante()
 var op1f = parseFloat(op1)
 var op2f = parseFloat(op2)
 
-switch (op){
-
-    case "+":
-        console.log(sumar(op1f, op2f));
-        break;
-    case "-":
-        console.log(restar(op1f, op2f));
-        break;
-    case "*":
-    case "X":
-    case "x":
-        console.log(multiplicar(op1f, op2f));
-        break;
-    case "/":
-    case ":":
-        console.log(dividir(op1f, op2f));
-        break;
-    default :
-        console.log("Esta operación no es válida, solo se admiten los operadores suma (+), resta (-), multiplcación (*, x, X) división (/, :)");
-        process.exit(1)
-        break;
+calculadora(op1f, op2f, op);
 
 
+function calculadora(op1f, op2f, op) {  
+
+    switch (op){
+
+        case "+":
+            console.log(sumar(op1f, op2f));
+            break;
+        case "-":
+            console.log(restar(op1f, op2f));
+            break;
+        case "*":
+        case "X":
+        case "x":
+            console.log(multiplicar(op1f, op2f));
+            break;
+        case "/":
+        case ":":
+            console.log(dividir(op1f, op2f));
+            break;
+        default :
+            console.log("Esta operación no es válida, solo se admiten los operadores suma (+), resta (-), multiplcación (*, x, X) división (/, :)");
+            process.exit(1)
+            break;
+
+
+    }
 }
+
 
 // Funciones separadas para encapsular y escalar a futuro.
 function sumar (a, b){
@@ -84,4 +91,3 @@ function comprobante () {
     }
     
 }
-
